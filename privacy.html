@@ -9,6 +9,8 @@
       --bg: #f9f9f9;
       --text: #222;
       --accent: #005bbb;
+      --light-accent: #007bff;
+      --border-color: #eee;
     }
 
     body {
@@ -17,7 +19,7 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
 
     header {
@@ -27,29 +29,48 @@
 
     h1 {
       color: var(--accent);
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #555;
+      font-size: 1rem;
     }
 
     section {
       max-width: 800px;
       margin: 0 auto;
       background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      border: 1px solid var(--border-color);
     }
 
     h2 {
-      color: var(--accent);
-      font-size: 1.2rem;
-      margin-top: 1.5rem;
+      color: var(--light-accent);
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 25px;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
     }
 
     footer {
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
-      color: #555;
+      color: #777;
     }
 
     a {
@@ -59,6 +80,29 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    strong {
+        color: var(--light-accent);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
@@ -70,56 +114,114 @@
   </header>
 
   <section>
-    <p>This Privacy Policy explains how data is handled when using the <strong>USCIS Case Tracker</strong> application developed by Yaiquel Carmenates.</p>
+    <p>This Privacy Policy explains in detail how data is handled and what measures are in place to ensure your privacy when using the <strong>USCIS Case Tracker</strong> application, developed by Yaiquel Carmenates. Our commitment is to provide a service that respects your privacy fully.</p>
 
     <h2>1. Types of Data Collected</h2>
-    <p>No personal data is collected, stored, or shared. This includes:</p>
+    <p>The <strong>USCIS Case Tracker</strong> application is designed to operate with minimal data interaction. We want to be absolutely clear: <strong>no personal data is collected, stored, or shared by our application.</strong> This includes, but is not limited to:</p>
     <ul>
-      <li>Geolocation data</li>
-      <li>Financial information</li>
-      <li>Medical data</li>
-      <li>User contacts</li>
-      <li>Identifiers or cookies</li>
+      <li><strong>Geolocation Data:</strong> We do not access or store your location information.</li>
+      <li><strong>Financial Information:</strong> We do not collect any financial details such as credit card numbers, bank accounts, or payment history.</li>
+      <li><strong>Medical Information:</strong> We do not collect any health or medical-related data.</li>
+      <li><strong>User Contacts:</strong> We do not access your device's contacts list.</li>
+      <li><strong>Identifiers or Cookies:</strong> We do not use persistent identifiers, cookies, or any similar tracking technologies that could identify you personally or track your online activity.</li>
+      <li><strong>Case Numbers:</strong> While you input USCIS case numbers into the app, these are processed temporarily and immediately discarded after the query to the public USCIS API is made. They are not stored or associated with you.</li>
     </ul>
 
-    <h2>2. Data Usage</h2>
-    <p>All queries are sent directly to the public USCIS API. Case numbers are used temporarily and discarded immediately after response. No tracking, storage, or profiling occurs.</p>
+    <h2>2. How Data is Used (or Not Used)</h2>
+    <p>All queries initiated within the <strong>USCIS Case Tracker</strong> application are sent directly to the public USCIS API. The purpose of this application is solely to facilitate the direct retrieval of publicly available case status information. Our processing is designed to be stateless:</p>
+    <ul>
+      <li>Case numbers you enter are used only for the purpose of making an immediate request to the USCIS API.</li>
+      <li>Immediately after receiving a response from the USCIS API, the case number is discarded from our system's temporary memory.</li>
+      <li>We do not engage in any form of data tracking, user profiling, or long-term storage of your queries or case numbers.</li>
+      <li>No de-identified, anonymized, or pseudonymized data is created or used, as no personal data is collected in the first place.</li>
+    </ul>
 
     <h2>3. Third Parties and Data Sharing</h2>
-    <p>No data is shared with any third parties. No analytics, advertising, or tracking integrations are used.</p>
+    <p>We want to ensure absolute transparency regarding third-party involvement and data sharing:</p>
+    <ul>
+      <li><strong>No data is shared with any third parties whatsoever.</strong> This includes, but is not limited to, advertisers, marketing partners, data brokers, or any other entities.</li>
+      <li>The application does not integrate with any analytics services, advertising networks, or third-party tracking libraries.</li>
+      <li>The only "third party" involved is the official USCIS API, which is a public service for retrieving case status information. Your interaction is directly with this public API for the sole purpose of checking your case status.</li>
+      <li>Third parties are not bound by any terms or conditions in our privacy policy, because no data is shared with them.</li>
+    </ul>
 
     <h2>4. Data Sale and Monetization</h2>
-    <p>User data is not sold or monetized in any form.</p>
+    <p>A core principle of <strong>USCIS Case Tracker</strong> is privacy and user focus:</p>
+    <ul>
+      <li><strong>User data is absolutely not sold, rented, or monetized in any form.</strong></li>
+      <li>Our business model does not rely on selling or profiting from your personal information or usage data.</li>
+    </ul>
 
     <h2>5. User Rights and Control</h2>
-    <p>Users have full control and transparency. They may stop using the app at any time without any effect on data (since none is stored).</p>
+    <p>Given that no personal data is collected or stored, users maintain full control and transparency over their interaction with the application:</p>
+    <ul>
+      <li>Users may stop using the application at any time. There will be no lingering data associated with them, as none was ever stored.</li>
+      <li>There are no user accounts, profiles, or settings to manage regarding data, as the application does not retain any user-specific information.</li>
+      <li>This design inherently protects your privacy by ensuring there is no personal data for us to manage or for you to request access to.</li>
+    </ul>
 
     <h2>6. Breach Notification</h2>
-    <p>In the extremely unlikely event of a data breach, users will be notified via email immediately.</p>
+    <p>While the design minimizes risks by not storing personal data, we have a clear protocol for any security incidents:</p>
+    <ul>
+      <li>In the extremely unlikely event of a security breach that could potentially impact any aspect of user interaction or data (even temporary non-personal data), we commit to notifying users immediately.</li>
+      <li>Notification would occur through prominent in-app messages and updates on our official communication channels (e.g., website, app store description if applicable), providing clear instructions for any recommended actions.</li>
+    </ul>
 
     <h2>7. Data Retention Policy</h2>
-    <p>No data is stored. Each interaction is stateless.</p>
+    <p>Our data retention policy is straightforward because of our design:</p>
+    <ul>
+      <li><strong>No user data is stored persistently.</strong> Each interaction with the USCIS API is stateless and anonymous.</li>
+      <li>There is no concept of "dormant" data, as data is never retained beyond the immediate processing of a single query.</li>
+    </ul>
 
     <h2>8. Data Deletion</h2>
-    <p>Since no data is retained, there is nothing to delete. Should future changes require storage, users will be given deletion options.</p>
+    <p>The principle of no data collection extends to deletion:</p>
+    <ul>
+      <li>Since no personal data or usage history is retained by the application, there is nothing for users to delete.</li>
+      <li>Should future versions of the application ever require the collection or storage of any form of user data (which would only occur with explicit user consent and a revised policy), comprehensive data deletion options would be provided to users.</li>
+    </ul>
 
     <h2>9. Transfer of Ownership</h2>
-    <p>If ownership changes, users will be notified. No data will be transferred without consent.</p>
+    <p>In the event of a change in ownership of the <strong>USCIS Case Tracker</strong> application:</p>
+    <ul>
+      <li>Users will be prominently notified of any such change.</li>
+      <li><strong>No user data will be transferred to the new entity.</strong> As no personal data is collected or stored, there is nothing to transfer.</li>
+      <li>The new owner would be required to adhere to a privacy policy that aligns with or exceeds the current privacy standards, and users would be provided with clear options regarding their continued use of the application under new terms.</li>
+    </ul>
 
-    <h2>10. Data Disposal</h2>
-    <p>If temporary logs are generated, they are securely discarded using encryption and proper protocols.</p>
+    <h2>10. Secure Data Disposal</h2>
+    <p>Even for transient operational data, security is paramount:</p>
+    <ul>
+      <li>Although no personal data is stored, any temporary system logs or operational data generated during the brief processing of an API query are handled with strict security measures.</li>
+      <li>Such temporary data, if it exists, is securely disposed of immediately after its intended use, utilizing industry-standard encryption and data sanitization protocols to prevent any recovery.</li>
+      <li>There is no user-downloadable data from our end, as we do not store it.</li>
+    </ul>
 
     <h2>11. Account Management</h2>
-    <p>No user accounts are created. There is no account to manage or close.</p>
+    <p>The <strong>USCIS Case Tracker</strong> application does not require or offer user accounts:</p>
+    <ul>
+      <li>There are no user accounts to create, manage, or close, eliminating the need for account-related data handling.</li>
+      <li>This design further reinforces user privacy by removing the necessity for personal authentication or profile creation.</li>
+    </ul>
 
     <h2>12. Changes to This Policy</h2>
-    <p>Any future changes will be clearly posted here, with date and explanation. Users will be notified of major updates.</p>
+    <p>We are committed to transparency regarding any updates to our Privacy Policy:</p>
+    <ul>
+      <li>Any future changes to this Privacy Policy will be clearly posted on this page, with a revised "Last updated" date at the top.</li>
+      <li>For any significant or material changes that might affect user interactions (e.g., if future features ever necessitated data collection), users would be notified proactively through prominent in-app messages and clear, plain-language summaries of what has changed.</li>
+      <li>Continued use of the application after such notifications would imply acceptance of the updated terms.</li>
+    </ul>
 
     <h2>13. Consent</h2>
-    <p>Consent is not required under the current design. If future versions collect any data, consent will be explicitly required.</p>
+    <p>Given the current design of the <strong>USCIS Case Tracker</strong> application, which does not collect or store any personal data, explicit consent for data processing is not required.</p>
+    <ul>
+        <li>There is no personal data for which to obtain consent, as our operations are entirely anonymous and stateless regarding user information.</li>
+        <li>Should any future version of the application introduce features that necessitate the collection of any form of personal data, explicit and informed user consent would be unequivocally required before such data collection begins. This would involve clear opt-in mechanisms and a detailed explanation of the data to be collected, its purpose, and how it will be used.</li>
+    </ul>
 
-    <h2>Contact</h2>
-    <p>If you have any questions or concerns, feel free to contact us at: <a href="mailto:yaiquelc@gmail.com">yaiquelc@gmail.com</a></p>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, concerns, or require further clarification regarding this Privacy Policy or the practices of <strong>USCIS Case Tracker</strong>, please do not hesitate to contact us:</p>
+    <p><strong>Email:</strong> <a href="mailto:yaiquelc@gmail.com">yaiquelc@gmail.com</a></p>
   </section>
 
   <footer>
